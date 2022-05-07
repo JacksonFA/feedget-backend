@@ -26,6 +26,6 @@ routes.post('/feedbacks', async (req, res) => {
         return res.status(201).send()
    } catch (error) {
        console.log(error)
-       return res.status(500).json({ message: error })
+       return res.status(500).json({ message: "Não foi possível enviar o feedback, \n tente novamente mais tarde." })
    }
 })
